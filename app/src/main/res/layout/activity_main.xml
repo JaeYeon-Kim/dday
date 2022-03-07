@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/dayTitle"
+       android:text="D-DAY Counter"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_marginTop="10dp"
+       android:textSize="20sp"
+       android:fontFamily="@font/bmjua_otf"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+   <ImageView
+       android:src="@drawable/jaeyounbora"
+       android:scaleType="centerCrop"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="100dp"/>
+
+   <TextView
+       android:id="@+id/textBora"
+       android:text="보라"
+       android:textSize="20sp"
+       android:fontFamily="@font/bmhannapro_otf"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="@id/dayTitle"
+       app:layout_constraintTop_toBottomOf="@id/dayTitle"
+       />
+
+   <ImageView
+       android:id="@+id/heartImage"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/heart"
+       app:layout_constraintTop_toBottomOf="@id/dayTitle"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+   <TextView
+       android:id="@+id/textJaeyoun"
+       android:text="재연"
+       android:textSize="20sp"
+       android:fontFamily="@font/bmhannapro_otf"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="@id/dayTitle"
+       app:layout_constraintTop_toBottomOf="@id/dayTitle"/>
+
+   <TextView
+       android:text="일째"
+       android:textSize="20sp"
+       android:fontFamily="@font/bmjua_otf"
+       android:layout_marginBottom="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="@id/textJaeyoun"
+       app:layout_constraintBottom_toBottomOf="@id/finalDate"
+       />
+
+   <TextView
+       android:id="@+id/finalDate"
+       android:text="0"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+       android:fontFamily="@font/bmjua_otf"
+       android:gravity="center"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:background="@drawable/radius"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+   <Button
+       android:id="@+id/startBtn"
+       android:text="연애 시작"
+       android:background="@drawable/custom_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+   <Button
+       android:id="@+id/endBtn"
+       android:text="오늘 날짜"
+       android:background="@drawable/custom_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
